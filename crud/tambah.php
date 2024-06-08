@@ -1,0 +1,96 @@
+<?php
+require'../halaman_admin/navbar_admin.php';
+session_start();
+
+if( !isset($_SESSION["login"]) ) {
+    header("Location: ../login_admin/login.php");
+    exit;
+}
+
+require '../fungsi/functions.php';
+
+//cek apakah tombol submit sudah ditekan atau belum
+if( isset($_POST["submit"]) ) {
+
+    if( tambah($_POST) > 0 ) {
+        echo "
+            <script>
+                alert('data berhasil ditambahkan!');
+                document.location.href = '../halaman_admin/index.php';
+            </script>
+        ";
+    } else {
+        echo "
+            <script>
+                alert('data gagal ditambahkan!');
+                document.location.href = '../halaman_admin/index.php';
+            </script>
+        ";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style_admin.css">
+    <title>Tambah data Destinasi</title>
+<body>
+    
+    <div class="container col-6">
+        <h1 class="text-center mb-3">Tambah Data Destinasi</h1>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <div class="mb-2">
+                <label for="nama_destinasi" class="form-label" placeholde>Nama Destinasi :</label>
+                <textarea type="text" class="form-control" name="nama_destinasi" id="nama_destinasi" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="deskripsi" class="form-label">Deskripsi :</label>
+                <textarea type="text" class="form-control" name="deskripsi" id="deskripsi" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="lokasi" class="form-label">Lokasi :</label>
+                <textarea type="text" class="form-control" name="lokasi" id="lokasi" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="nama_makanan" class="form-label">Nama Makanan :</label>
+                <textarea type="text" class="form-control" name="nama_makanan" id="nama_makanan" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="nama_hotel" class="form-label">Nama Hotel :</label>
+                <textarea type="text" class="form-control" name="nama_hotel" id="nama_hotel" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="nama_transportasi" class="form-label">Nama Transportasi :</label>
+                <textarea type="text" class="form-control" name="nama_transportasi" id="nama_transportasi" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="harga" class="form-label">Harga :</label>
+                <textarea type="text" class="form-control" name="harga" id="harga" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="image" class="form-label">Image :</label>
+                <input type="file" class="form-control" name="image" id="image" required></input>
+            </div>
+            <div class="mb-2">
+                <button type="submit" class="form-control btn btn-secondary" name="submit">Tambah Data!</button>
+            </div>
+            <div class="mb-2">
+            <a href="../halaman_admin/index.php" style="text-decoration: none;" class="btn btn-primary">Kembali</a>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- footer -->
+    <?php
+    require '../halaman_admin/footer_admin.php';
+    ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
