@@ -72,47 +72,24 @@ if( isset($_POST["register"]) ) {
             border: 2px solid black;
         }
         .login {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 20px;
-  }
-.login p {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-}
-.login  a {
-    color: blue;
-    text-decoration: none;
-    font-weight: 600;
-    font-style: italic;
-}
-.login p a:hover {
-   text-decoration: underline;
-}
-        /* h1 {
-            text-align:center;
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 20px;
         }
-
-        form {
-            width:300px;
-            margin:0 auto;
+        .login p {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        label {
-            display:block;
-            margin-bottom:5px;
+        .login  a {
+            color: blue;
+            text-decoration: none;
+            font-weight: 600;
+            font-style: italic;
         }
-
-        input[type="text"], input[type="password"] {
-            padding:5px;
-            margin-bottom:10px;
-            width:100%;
+        .login p a:hover {
+            text-decoration: underline;
         }
-
-        button[type="submit"] {
-            padding:10px 20px;
-        } */
     </style>
 </head>
 <body>
@@ -126,15 +103,15 @@ if( isset($_POST["register"]) ) {
     <form action="" method="post">
        
         <label for="username">Username :</label>
-        <input type="text" name="username" id="username" autofocus placeholder>
+        <input type="text" name="username" id="username" placeholder autofocus autocomplete="off" required>
         <br>
             
         <label for="password">Password :</label>
-        <input type="password" name="password" id="password" autofocus placeholder>
+        <input type="password" name="password" id="password" placeholder autofocus autocomplete="off" required>
         <br>
           
         <label for="password2">Konfirmasi Password :</label>
-        <input type="password" name="password2" id="password2" autofocus placeholder>
+        <input type="password" name="password2" id="password2" placeholder autofocus autocomplete="off" required>
         <br>
         <button type="submit" name="register">Register!</button>
         <br>

@@ -20,8 +20,8 @@
   <nav class="navbar">
     <div class="nav-item">
       <form action="" method="post">
-        <input type="search" id="query" name="keyword" size="40" autofocus placeholder="enter search keywords..." aria-label="Search through site content">
-        <button type="submit" name="cari">Search</button>
+        <input type="search" id="query" name="keyword" size="40" autofocus placeholder="enter search keywords..." aria-label="Search through site content" id="keyword">
+        <button type="submit" name="cari" id="tombol-cari">Search</button>
       </form>
     </div>
     <a href="../user/home.php">home</a>
@@ -32,7 +32,7 @@
     <div class="dropdown">
     <a href="#" class="dropbtn"><i class="fa fa-user" style="color: black;"></i><i class="fa fa-caret-down"></i></a>
       <div class="dropdown-content">
-        <!-- <a href="../login_admin/login.php">Login</a> -->
+        
         <a href="../login_admin/logout.php">Login</a>
         <a href="../login_admin/register.php">Register</a>
       </div>

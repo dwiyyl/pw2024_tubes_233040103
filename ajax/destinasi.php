@@ -3,19 +3,19 @@ require '../fungsi/functions.php';
 
 $keyword = $_GET["keyword"];
 
-// $query = "SELECT * FROM tabel_destinasi
-//             WHERE
-//             nama_destinasi LIKE '%$keyword%' OR
-//             deskripsi LIKE '%$keyword%' OR
-//             lokasi LIKE '%$keyword%' OR
-//             nama_makanan LIKE '%$keyword%' OR
-//             nama_hotel LIKE '%$keyword%' OR
-//             nama_transportasi LIKE '%$keyword%' OR
-//             harga LIKE '%$keyword%'
-//             ";
-// $destinasi = query($query);
+$query = "SELECT * FROM tabel_destinasi
+            WHERE
+            nama_destinasi LIKE '%$keyword%' OR
+            deskripsi LIKE '%$keyword%' OR
+            lokasi LIKE '%$keyword%' OR
+            nama_makanan LIKE '%$keyword%' OR
+            nama_hotel LIKE '%$keyword%' OR
+            nama_transportasi LIKE '%$keyword%' OR
+            harga LIKE '%$keyword%'
+            ";
+$destinasi = query($query);
 
-//var_dump($destinasi);
+// var_dump($destinasi);
 ?>
 
 <table class="table table-bordered table-light ">
@@ -32,6 +32,14 @@ $keyword = $_GET["keyword"];
       <th scope="col">Harga</th>
       <th scope="col">Aksi</th>
     </tr>
+
+    <?php if (empty($destinasi)) : ?>
+      <tr>
+        <td colspan="10">
+            <p style="color: red; font-style:italic; text-align: center;">data destinations tidak ditemukan!</p>
+        </td>
+      </tr>
+      <?php endif; ?>
   </thead>
 
     <?php $i =1;
@@ -48,8 +56,10 @@ $keyword = $_GET["keyword"];
       <td><?= $row["nama_transportasi"]; ?></td>
       <td><?= $row["harga"]; ?></td>
       <td>
-        <button><a style="text-decoration:none" href="../crud/ubah.php?id=<?= $row["id"]; ?>" class="btn btn-rimary">ubah</a></button>
-        <a href="../crud/hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('yakin?');" class="btn btn-rimary"> hapus</a>
+        <div class="container mt-1">
+        <a class="btn btn-primary" style="text-decoration:none" href="../crud/ubah.php?id=<?= $row["id"]; ?>">ubah</a>
+        <a class="btn btn-danger mt-2" href="../crud/hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('yakin?');"> hapus</a>
+        </div>
       </td>
     </tr>
     <?php $i++; ?>

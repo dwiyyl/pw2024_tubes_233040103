@@ -133,10 +133,10 @@ if( isset($_POST["login"]) ) {
         
             
                 <label for="username">Username :</label>
-                <input type="text" name="username" id="username" autofocus placeholder>
+                <input type="text" name="username" id="username" placeholder autofocus autocomplete="off" required>
                 <br>
                 <label for="password">Password :</label>
-                <input type="password" name="password" id="password autofocus placeholder">
+                <input type="password" name="password" id="password" placeholder autofocus autocomplete="off" required>
                 <br>
                 <button type="submit" name="login">Login</button>
                 <br>

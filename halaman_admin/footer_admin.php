@@ -10,7 +10,7 @@
     <footer class="bg-body-dark text-center text-lg-start mt-auto w-100">
         <div class="text-center p-3" style="#fff">
             <hr>
-            © 2024 Copyright: Pemograman WEB
+            © 2024 Copyright: Pemograman Web
             <!-- <a class="text-body text-decoration:none">Pemograman Web</a> -->
         </div>
     </footer>

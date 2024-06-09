@@ -43,7 +43,7 @@ if( isset($_POST["cari"]) ) {
     
     </section>
     
-    <h1 class="text-center py-3">Destinations in Indonesia</h1>
+    <h1 class="text-center py-3">Top Destinations in Indonesia</h1>
 
     <div class="container">
         <form action="" method="post">
@@ -52,7 +52,7 @@ if( isset($_POST["cari"]) ) {
         </form>
         <br>
         <div id="container">
-    </div>
+    <!-- </div> -->
 
     <!-- navigasi start -->
     <div class="container">

@@ -19,7 +19,7 @@
     require '../user/navbar_user.php';
     ?>
 
-    <div class="heading" style="background:url(../images/backabout.jpg) no-repeat">
+    <div class="heading" style="background:url(../images/backgabout.jpg) no-repeat">
         <h1>about us</h1>
     </div>
     

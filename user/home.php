@@ -57,21 +57,21 @@ if( isset($_POST["cari"]) ) {
 
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide slide" style="background:url(../images/home-slide1.jpg) no-repeat">
+                <div class="swiper-slide slide" style="background:url(../images/slide1.jpg) no-repeat">
                     <div class="content">
                         <span>explore, discover, travel</span>
-                        <h3>travel arround the world</h3>
+                        <h3>travel arround indonesia</h3>
                         <a href="../user/package.php" class="btn">discover more</a>
                     </div>
                 </div>
-                <div class="swiper-slide slide" style="background:url(../images/home-slide2.jpg) no-repeat">
+                <div class="swiper-slide slide" style="background:url(../images/slide2.jpg) no-repeat">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>discover the new places</h3>
                         <a href="../user/package.php" class="btn">discover more</a>
                     </div>
                 </div>
-                <div class="swiper-slide slide" style="background:url(../images/home-slide3.jpg) no-repeat">
+                <div class="swiper-slide slide" style="background:url(../images/slide3.jpg) no-repeat">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>make your worthwhile</h3>
@@ -95,23 +95,23 @@ if( isset($_POST["cari"]) ) {
 
         <div class="box-container">
             <div class="box">
-                <img src="../images/iconservices.png" width="150" height="150"alt="">
+                <img src="../images/iconadventure.png" width="" height=""alt="">
                 <h3>Adventure</h3>
             </div>
             <div class="box">
-                <img src="../images/iconservices.png" width="150" height="150" alt="">
+                <img src="../images/icontourguide.png" width="" height="" alt="">
                 <h3>Tour Guide</h3>
             </div>
             <div class="box">
-                <img src="../images/iconservices.png" width="150" height="150" alt="">
+                <img src="../images/icontransport.png" width="" height="" alt="">
                 <h3>Transportation</h3>
             </div>
             <div class="box">
-                <img src="../images/iconservices.png" width="150" height="150"alt="">
+                <img src="../images/iconmakan.png" width="" height=""alt="">
                 <h3>Food</h3>
             </div>
             <div class="box">
-                <img src="../images/iconservices.png" width="150" height="150" alt="">
+                <img src="../images/iconhotel.png" width="" height="" alt="">
                 <h3>Hotel</h3>
             </div>
         </div>
@@ -137,7 +137,7 @@ if( isset($_POST["cari"]) ) {
     <!-- home packages section starts -->
     <section class="home-packages">
         <h1 class="heading-title">our packages</h1>
-        <h2>destinations in indonesia</h2>
+        <h2>Top destinations in indonesia</h2>
         <div class="load-more"><a href="../user/package.php" class="btn">View Destinations</a></div>
     </section>
     <!-- ends -->
@@ -145,8 +145,8 @@ if( isset($_POST["cari"]) ) {
     <!-- home offer section starts -->
     <section class="home-offer">
         <div class="content">
-            <h3>upto 25% off</h3>
-            <p>Save more on your adventures! Get up to 25% off for unforgettable holiday experiences. Don't miss this opportunity to plan your dream trip at a more affordable price.</p>
+            <h3>upto 15% off</h3>
+            <p>Save more on your adventures! Get up to 15% off for unforgettable holiday experiences. Don't miss this opportunity to plan your dream trip at a more affordable price.</p>
             <a href="../user/book.php" class="btn">book now</a>
         </div>
     </section>
@@ -155,20 +155,25 @@ if( isset($_POST["cari"]) ) {
 
     <!-- contact us section start -->
     <section class="contact" id="contact">
-        <h1 class="heading-title">Contact Us!</h1>
-
-      <div class="contact-form">
-        <form action="">
-          <input type="name" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea name="" id="" cols="35" rows="10" placeholder="Message" required></textarea>
-          <input type="submit" value="Send Message" class="submit" required />
-        </form>
-      </div>
-    </section>
-
+    <h1 class="heading-title">Contact Us!</h1>
+    <p>We'd love to hear from you! Reach out to us with any questions or comments.</p>
+    <div class="contact-content">
+        <div class="contact-map">
+            <!-- Tambahkan peta di sini -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.201034972413!2d107.59067007403473!3d-6.86649666717979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6be3e8a0c49%3A0x730028bf4627def4!2sUniversitas%20Pasundan!5e0!3m2!1sid!2sid!4v1717485151532!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name" autofocus required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea name="" id="" cols="35" rows="10" placeholder="Message" required></textarea>
+                <input type="submit" value="Send Message" class="submit" />
+            </form>
+        </div>
+    </div>
+</section>
     <!-- contact us section ends -->
-
+     
     
     <!-- footer section starts -->
     <?php

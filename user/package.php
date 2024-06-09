@@ -46,14 +46,14 @@ if( isset($_POST['cari']) ) {
    require '../user/navbar_user.php';
    ?>
 
-    <div class="heading" style="background:url(../images/backpackage.jpg) no-repeat">
+    <div class="heading" style="background:url(../images/backgpackage.jpg) no-repeat">
         <h1>packages</h1>
     </div>
     <br>
 
 
     <!-- top destinations starts -->
-    <h1 class="heading-title mt-5">destinations in indonesia</h1>
+    <h1 class="heading-title mt-5">Top destinations in indonesia</h1>
     <div class="container pt-4">
         <div class="row">
             <?php foreach( $destinasi as $row) : ?>

@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- custom css file link -->
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+       .book h2 {
+    margin-top: 10px; /* Adjust this value as needed */
+}
+    </style>
 </head>
 <body>
     
@@ -24,14 +29,17 @@
     </div>
 
     <!--  -->
+    <section class="book">
     <div class="container">
         <div class="content">
             <h1 class="heading-title">book your trip!</h1>
+            <h2 style="text-align: center";>Your Next Destination Awaits - Book Today!</h2>
                 <div class="container" style="display: flex; justify-content:center; margin-bottom:20px;">
                 <div class="load-more"><a href="../login_admin/logout.php" class="btn">Registrasi / Login</a></div>
             </div>    
         </div>
     </div>
+</section>
 
 
     <!-- footer section starts -->

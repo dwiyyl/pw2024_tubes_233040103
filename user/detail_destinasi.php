@@ -25,7 +25,6 @@ if (isset($_GET['id'])) {
 </head>
 <body>
 
-
 <section class="detail_destinasi py-5">
     <div class="container">
         <?php foreach($destinasi as $row) : ?>
@@ -52,7 +51,7 @@ if (isset($_GET['id'])) {
                             </div>
                         </div>
                         
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-5">
                             <h6>Deskripsi</h6>
                             <div class="deskripsi mb-2">
                                 <p><?php
