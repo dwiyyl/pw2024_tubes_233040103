@@ -18,8 +18,8 @@ $destinasi = query($query);
 //var_dump($destinasi);
 ?>
 
-<h1 class="heading-title">top destinations</h1>
-    <div class="container pt-5">
+    <h1 class="heading-title mt-5">Top destinations in indonesia</h1>
+    <div class="container pt-4">
         <div class="row">
             <?php foreach( $destinasi as $row) : ?>
                 <!-- <div class="col pt-3 pb-4"> -->

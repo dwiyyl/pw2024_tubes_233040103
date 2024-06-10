@@ -128,7 +128,7 @@ if( isset($_POST["cari"]) ) {
 
     <div class="content">
         <h3>about us</h3>
-        <p>Welcome to Explore Destinations, the leading platform for exploring and booking your travels to the best tourist destinations worldwide. We are here to inspire you in planning unforgettable holiday adventures and provide you with an easy and convenient booking experience.</p>
+        <p>Welcome to Explore Destinations, the leading platform for exploring and booking your travels to the best tourist destinations in Indonesia. We are here to inspire you in planning unforgettable holiday adventures and provide you with an easy and convenient booking experience.</p>
         <a href="../user/about.php" class="btn">read more</a>
     </div>
     </section>

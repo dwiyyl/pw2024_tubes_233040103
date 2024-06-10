@@ -12,12 +12,17 @@
         $arrivals = $_POST['arrivals'];
         $leaving = $_POST['leaving'];
      
-        $request = " insert into tabel_book_form(name, email, phone, address, location, guests, arrivals, leaving) values ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving') ";
+        $request = " INSERT INTO tabel_book_form(name, email, phone, address, location, guests, arrivals, leaving, user_iduser)
+        values ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving', '0') ";
 
         mysqli_query($connection, $request);
-
-        header('Location: ../user/book.php');
+        echo "<script>
+                    alert('Data berhasil ditambahkan!');
+                    window.location.href = '../user/book.php';
+                  </script>";
         }else{
-            echo 'something went wrong try again';
+            echo "<script>
+                    alert('Data gagal berhasil ditambahkan!');
+                  </script>";
     }
 ?>

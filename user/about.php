@@ -32,7 +32,7 @@
 
     <div class="content">
         <h3>why chose us?</h3>
-        <p>We prioritize the security and privacy of our customers' information. We employ the latest security technology to safeguard customers' personal data and ensure that every online transaction is conducted securely.</p>
+        <p>At Explore Destinations, we are dedicated to providing the ultimate travel experience across Indonesia's most breathtaking locations. Our platform allows you to explore and book your dream vacations with ease and convenience. We pride ourselves on offering personalized travel packages that cater to your preferences and needs</p>
         <div class="icons-container">
             <div class="icons" >
                 <a href="../user/package.php"><i class="fas fa-map"></i></a> 

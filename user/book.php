@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
        .book h2 {
-    margin-top: 10px; /* Adjust this value as needed */
-}
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>

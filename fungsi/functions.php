@@ -35,7 +35,6 @@ function tambah($data) {
 
     return mysqli_affected_rows($conn);
 }
-////
 
 function upload(){
 
@@ -89,7 +88,6 @@ function hapus($id) {
 
     return mysqli_affected_rows($conn);
 }
-// ////
 
 function ubah($data) {
     global $conn;
@@ -129,7 +127,6 @@ function ubah($data) {
 
 }
 
-///////
 function cari($keyword) {
     $query = "SELECT * FROM tabel_destinasi
                 WHERE
@@ -143,7 +140,6 @@ function cari($keyword) {
             ";
     return query($query);
 }
-//////
 
 function registrasi($data) {
     global $conn;
@@ -179,7 +175,7 @@ function registrasi($data) {
     return mysqli_affected_rows($conn);
     
 }
-/////////////////
+
 function registrasi2($data) {
     global $conn;
 

@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- custom css file link -->
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .inputBox select {
+            width: 100%;
+            padding: 1.2rem 1.4rem;
+            background: var(--light-black);
+            color: #ddd;
+            border: .1rem solid var(--black);
+            outline: none;
+            font-size: 15px;
+            color: var(--light-black);
+            margin-top: 1.5rem;
+            appearance: none;
+            background: var(--light-white);
+        }
+    </style>
 </head>
 <body>
     
@@ -47,8 +62,24 @@
             </div>
             <div class="inputBox">
                 <span>where to :</span>
-                <input type="text" placeholder="place you want to visit" name="location" required>
+                <!-- <input type="text" placeholder="place you want to visit" name="location" required> -->
+                <select name="location" required>
+                <option value="" disabled selected>Select a location</option>
+                <option value="Bromo Tengger Semeru">Bromo Tengger Semeru</option>
+                <option value="Danau Toba">Danau Toba</option>
+                <option value="Malioboro">Malioboro</option>
+                <option value="Labuan Bajo">Labuan Bajo</option>
+                <option value="Raja Ampat">Raja Ampat</option>
+                <option value="Candi Borobudur">Candi Borobudur</option>
+                <option value="Lempuyang">Lempuyang</option>
+                <option value="Ranca Upas">Ranca Upas</option>
+                <option value="Waerebo">Waerebo</option>
+                <option value="Banda Neira">Banda Neira</option>
+                <option value="Nusa Penida">Nusa Penida</option>
+                <option value="Karimun Jawa">Karimun Jawa</option>
+                </select>
             </div>
+
             <div class="inputBox">
                 <span>how many :</span>
                 <input type="number" placeholder="number of guests" name="guests" required>
@@ -71,16 +102,10 @@
     <!-- booking section ends -->
 
 
-
-
-
     <!-- footer section starts -->
     <?php
     include '../user/footer.php';
     ?>
-    <!-- footer section end -->
-
-
 
     <!-- swiper js link -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

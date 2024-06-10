@@ -25,24 +25,6 @@ $dts = query("SELECT * FROM tabel_destinasi WHERE id = $id")[0];
 
 //cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"]) ) {
-// //ambil data dari tiap elemen dalam form
-// $nama_destinasi = $_POST["nama_destinasi"];
-// $deskripsi = $_POST["deskripsi"];
-// $lokasi = $_POST["lokasi"];
-// $image = $_POST["image"];
-// $nama_makanan = $_POST["nama_makanan"];
-// $nama_hotel = $_POST["nama_hotel"];
-// $nama_transportasi = $_POST["nama_transportasi"];
-// $harga = $_POST["harga"];
-
-//query insert data
-// $query = "INSERT INTO tabel_destinasi
-//             VALUES
-//             ('0', '$nama_destinasi', '$deskripsi', '$lokasi', '$image', '$nama_makanan', '$nama_hotel', '$nama_transportasi', '$harga', '0')
-//             ";
-//             mysqli_query($conn, $query);
-        //cek apakah data berhasil diubah atau tidak
-        
         if( ubah($_POST) > 0 ) {
         echo "
             <script>
@@ -50,7 +32,7 @@ if( isset($_POST["submit"]) ) {
                 document.location.href = '../halaman_admin/index.php';
             </script>
         ";
-    } else {
+        } else {
         echo "
             <script>
                 alert('data gagal diubah!');
